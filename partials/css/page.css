@@ -1,0 +1,146 @@
+        /* Styles yang sama seperti sebelumnya */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        .judul {
+            margin-bottom: 20px;
+        }
+        
+        .form-container {
+            max-width: 900px; /* Atur lebar maksimum sesuai kebutuhan */
+            margin: auto;
+            background: #F9F9E0;
+            padding: 70px;
+            padding-top: 15px;
+            padding-bottom: 25px;
+            border-radius: 25px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: black;
+        }
+        
+        .form-input {
+            width: 100%; /* Tetap menggunakan lebar penuh */
+            padding: 15px; /* Padding untuk tampilan lebih panjang */
+            border: none;
+            border-bottom: 2px solid; /* Border bawah */
+            border-radius: 0; /* Untuk border radius */
+            box-sizing: border-box;
+            outline: none; /* Menghapus outline biru */
+            text-align: center;
+            background-color: transparent;
+            max-width: 100%; /* Pastikan lebar maksimum 100% */
+        }
+
+        .form-input.zodiak {
+            text-align: start;
+            -webkit-appearance: none; /* Menghilangkan gaya default pada Webkit (Chrome, Safari) */
+            -moz-appearance: none;    /* Menghilangkan gaya default pada Firefox */
+            appearance: none;         /* Menghilangkan gaya default di semua browser */
+            background: transparent;  /* Menghapus latar belakang */
+            border: none;            /* Menghapus border default */
+            border-bottom: 2px solid #000; /* Menambahkan border bawah */
+            padding: 8px 0;          /* Padding atas dan bawah */
+            margin-bottom: 1px;     /* Margin bawah jika perlu */
+            outline: none;           /* Menghilangkan outline saat dipilih */
+            width: 100%;             /* Pastikan lebar 100% jika diperlukan */
+            text-align:center;
+        }
+        
+        .form-input.zodiak::after {
+            content: ''; /* Tambahkan konten kosong */
+            display: inline-block; /* Tampilkan sebagai elemen inline-block */
+            width: 10px; /* Sesuaikan lebar panah */
+            height: 10px; /* Sesuaikan tinggi panah */
+            background: url('path_to_your_custom_arrow_image.svg') no-repeat; /* Ganti dengan gambar panah jika perlu */
+            background-size: contain; /* Ukuran background mengikuti ukuran kontainer */
+            position: absolute; /* Posisi relatif untuk menempatkan panah */
+            right: 10px; /* Sesuaikan jarak dari kanan */
+            top: 50%; /* Posisikan di tengah */
+            transform: translateY(-50%); /* Sesuaikan posisi vertikal */
+        }        
+        
+        
+        .form-input:focus {
+            border-color: #FF90BC; /* Keep the border color change */
+            box-shadow: none; /* Remove the focus shadow effect */
+        }
+        
+        .form-button {
+            background-color: #FF76CE;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .form-button:hover {
+            background-color: #bc649d;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px; /* Padding untuk ruang dalam modal */
+            border: 1px solid #888;
+            width: auto; /* Ubah jadi auto untuk menyesuaikan dengan konten */
+            max-width: 90%; /* Max-width untuk layar yang lebih besar */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: black;
+        } 
+        
+        @media (max-width: 768px) { /* Sesuaikan ukuran ini sesuai kebutuhan */
+            .modal-content {
+                width: 90%; /* Lebar modal di mobile */
+                max-width: none; /* Menghilangkan batasan max-width */
+                padding: 20px; /* Padding tetap sama */
+            }
+        }        
+        
+        .btn-modal {
+            background-color: transparent;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .center-button {
+            display: flex;
+            justify-content: center;
+            margin-top: 5px; /* Sesuaikan jarak sesuai kebutuhan */
+        }
+        

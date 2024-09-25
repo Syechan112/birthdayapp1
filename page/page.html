@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Birthday</title>
+
+    <!-- logo -->
+    <link rel="icon" href="/img/logo/logo.png" type="image/x-icon" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- css -->
+     <link rel="stylesheet" href="/partials/font/font.css">
+     <link rel="stylesheet" href="/partials/css/page.css">
+     <link rel="stylesheet" href="/partials/responsive/responsive-page.css">
+
+</head>
+<body>
+
+    <div class="form-container">
+        <form id="zodiakForm" onsubmit="showModal(event)">
+            <div class="judul">
+                <h1 class="satisfy-regular" style="color: black;">Form Birthday</h1>
+            </div>
+            <div class="form-group">
+                <label for="name" class="satisfy-regular form-label">Nama</label>
+                <input type="text" id="name" class="form-input" placeholder="Masukan nama lengkap" required>
+            </div>
+            <div class="form-group">
+                <label for="tanggal" class="satisfy-regular form-label">Tanggal</label>
+                <input type="number" id="tanggal" class="form-input" min="1" max="31" placeholder="Masukan tanggal lahir" required>
+            </div>
+            <div class="form-group">
+                <label for="bulan" class="satisfy-regular form-label">Bulan</label>
+                <input type="text" id="bulan" class="form-input" placeholder="Wajib nama bulan isi nya" required>
+            </div>
+            <div class="form-group">
+                <label for="harapan" class="satisfy-regular form-label">Harapan</label>
+                <input id="harapan" class="form-input" rows="4" placeholder="Masukan harapan kamu" required></input>
+            </div>
+            <div class="form-group">
+                <label for="zodiak" class="satisfy-regular form-label">Zodiak</label>
+                <select id="zodiak" class="form-input zodiak" required>
+                    <option value="" disabled selected style="text-align: center;">Pilih Zodiak</option>
+                    <option value="Aries">Aries</option>
+                    <option value="Taurus">Taurus</option>
+                    <option value="Gemini">Gemini</option>
+                    <option value="Cancer">Cancer</option>
+                    <option value="Leo">Leo</option>
+                    <option value="Virgo">Virgo</option>
+                    <option value="Libra">Libra</option>
+                    <option value="Scorpio">Scorpio</option>
+                    <option value="Sagittarius">Sagittarius</option>
+                    <option value="Capricorn">Capricorn</option>
+                    <option value="Aquarius">Aquarius</option>
+                    <option value="Pisces">Pisces</option>
+                </select>
+            </div>
+            <br><br>
+            <button type="submit" class="roboto-black form-button">Kirim</button>
+        </form>
+    </div>
+    
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div id="modal-body"></div>
+            <div id="modal">
+                <div id="modal-body"></div>
+                <div class="center-button">
+                    <button class="btn-modal" id="next-button" onclick="nextModal()" style="margin-top: 20px; display: none;"><img src="/img/svg/next-helium.svg" alt=""></button>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <script src="/partials/js/page.js"></script>
+</body>
+</html>

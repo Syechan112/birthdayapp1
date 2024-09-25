@@ -1,0 +1,198 @@
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Mengunci body saat form ditampilkan */
+body.no-scroll {
+    overflow: hidden;
+}
+
+
+.container {
+    text-align: center;
+}
+
+.swipe-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.swipe-button {
+    width: 300px;
+    padding: 15px;
+    background-color: transparant;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.swipe-button.swiped {
+    transform: translateX(150%);
+    opacity: 0;
+}
+
+.swipe-message {
+    display: none;
+    margin-top: 10px;
+    color: green;
+    transition: opacity 0.5s ease;
+}
+
+.swipe-message.visible {
+    display: block;
+    opacity: 1;
+}
+
+.form-container {
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border-radius: 30px;
+}
+
+.form-content {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group input {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none; /* Menghilangkan outline saat fokus */
+    background-color: rgba(255, 255, 255, 0.1); /* Opsional: tambahkan latar belakang saat fokus */
+}
+
+.form-group label {
+    color: white;
+    font-size: 16px;
+    
+}
+
+.submit-button {
+    width: 300px;
+    padding: 15px;
+    background-color: #00224D;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #192e48;
+    transform: scale(1.05);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+
+.input-field {
+    text-align: center;
+}
+
+/* Tombol kustom untuk upload foto */
+.custom-photo-button {
+    background-color: #FF6600;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.custom-photo-button:hover {
+    background-color: #F5F5F5;
+    color: black;
+}
+
+.card-title {
+    color: white;
+}
+
+#cardName {
+    font-size: 20px;
+}
+
+.down {
+    text-align: left;
+    margin-top: 10px;
+}
+.up {
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+.time-container {
+    color: white;
+}
+
+#currentTime {}
+
+#cardTemplate {
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+
+    padding: 20px; /* Ruang di dalam kartu */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Bayangan untuk efek 3D */
+    color: white; /* Warna teks putih */
+    border-radius: 35px;
+}
+
+#cardPhoto {
+    border-radius: 35px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 100%;
+    width: 300px; /* Atau sesuaikan sesuai kebutuhan */
+    margin: 10px;
+    border-radius: 8px;
+    overflow: hidden; /* Pastikan isi tidak keluar dari kartu */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(145deg, #f2f2f2, #e5e5e5); /* Gradasi untuk tampilan premium */
+}
+
+.card img {
+    width: 250px; /* Mengatur gambar agar tidak melebihi ukuran kartu */
+    height: auto; /* Menjaga aspek rasio gambar */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+    border-radius: 8px 8px 0 0; /* Menjaga sudut atas kartu melengkung */
+}

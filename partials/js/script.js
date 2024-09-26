@@ -1,21 +1,9 @@
 const phrases = [
-    "Hallooww 😀",
-    "Kita pembukaan dulu yaaa 😄",
-    "Ekhem!! 😮‍💨",
-    "Perkenalkan nama ku Sean!! 😎",
-    "Aku adalah pembuat aplikasi ini 😇",
-    "Aplikasi ini aku buat untuk mengucapkan 😊",
-    "Selamat kepada seseorang yang bulan ini 😙",
-    "Karena Telah menginjak usia baruu!! 😭",
-    "Ini hadiah dari aku 😋",
-    "Semoga kamu suka yaaa~",
-    "Dan aku harap 😳",
-    "Semoga dengan ini 😊",
-    "Kamu bisa lebih percaya diri lagi!! 🫡",
-    "Okeiii 🙊",
-    "Oia, info penting sebelum lanjut",
-    "Kamu perlu tau zodiak kamu dulu yaa!!",
-    "Langsung ajaaa kita mulai! 😍",
+"GILAAA LOOE!!",
+"TAMBAH UMMUR JUGA LOOE",
+"SELAMAT ULANG TAHUN LOOE",
+"GUE HARAP SEHAT SELALU LOOE",
+"DAH LANGSUNG MULAI AJA DEH"
 ];
 
 let currentPhraseIndex = 0;
